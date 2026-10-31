@@ -99,6 +99,23 @@ through the game's own input handlers:**
 - No accessibility mode beyond mute visuals; the calibration minimum is a
   steady hand (average of 8 taps).
 
+## Published verification (LOB7 reader, 31/10 ~23:58 → 01/11 00:05)
+
+Published as `br_s_7c1c6c30-1fe1-44a1-9013-5079278c9fd8` (v1.0.0, game
+`bg_s_c5fbf532-4874-4e16-86b1-53d5cc8b75c8`), frozen on commit `4e35096`.
+In the public reader, verified for real: game loads and renders its home
+screen inside the player iframe; a real click on **Play** opened the song
+select; a real click on the first card **started the piece** (HUD
+"000000 · 0% · Sock Parade · Normal" visible in the accessibility tree);
+auto-pause on blur triggered correctly when the test pane lost focus. A
+complete keyboard-played piece inside the reader could not be finished: the
+test browser's webview input routing died mid-verification (known tool
+limitation, both reader tabs stopped attaching). Equivalence evidence: the
+published release serves exactly commit `4e35096`, whose `index.html` is
+byte-identical to the locally and fully play-tested file (two complete
+playthroughs above), and LOB7's server-side runtime validation passed on
+that snapshot.
+
 ## Tooling
 
 Made with Z-Code (automated). Balance consult: Kimi K3.1 Pro (`kimi -p`,
