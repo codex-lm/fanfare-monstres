@@ -1,0 +1,11 @@
+{
+  "title": "La Fanfare des Monstres",
+  "description": "Four paper-cut monsters want to form an orchestra. Hit D F J K (or tap the lanes) as each note reaches its pad: every good hit plays the monster's instrument, chains raise the multiplier and wake the audience. Three hand-written pieces, an Easy mode, medals at 60/75/90% accuracy — the concert succeeds above 60%.",
+  "entrypoint": "index.html",
+  "license": "MIT",
+  "genre": ["rhythm", "arcade", "music"],
+  "themes": ["monsters", "paper-cut theater", "orchestra"],
+  "controls": ["D F J K: play the four monsters", "Tap a lane: touch play", "P or Esc: pause"],
+  "credits": ["Concept: Cédric Bernadac", "Game made by Z-Code", "Balance review: Kimi K3.1 Pro"],
+  "cover": "cover.png"
+}
